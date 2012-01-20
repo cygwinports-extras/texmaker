@@ -1,0 +1,60 @@
+--- origsrc/texmaker-3.2.2/texmaker.pro	2012-01-11 09:06:42.000000000 -0600
++++ src/texmaker-3.2.2/texmaker.pro	2012-01-20 00:10:24.287986600 -0600
+@@ -65,25 +65,6 @@ HEADERS	+= texmaker.h \
+ 	scandialog.h \
+ 	synctex_parser.h \
+ 	synctex_parser_utils.h \
+-	hunspell/affentry.hxx \
+-	hunspell/affixmgr.hxx \
+-	hunspell/atypes.hxx \
+-	hunspell/baseaffix.hxx \
+-	hunspell/csutil.hxx \
+-	hunspell/dictmgr.hxx \
+-	hunspell/hashmgr.hxx \
+-	hunspell/htypes.hxx \
+-	hunspell/hunspell.hxx \
+-	hunspell/hunspell.h \
+-	hunspell/langnum.hxx \
+-	hunspell/license.hunspell \
+-	hunspell/phonet.hxx \
+-	hunspell/suggestmgr.hxx \
+-	hunspell/license.myspell \
+-	hunspell/filemgr.hxx \
+-	hunspell/hunzip.hxx \
+-	hunspell/replist.hxx \
+-	hunspell/w_char.hxx \
+ 	singleapp/qtlocalpeer.h \
+ 	singleapp/qtlockedfile.h \
+ 	singleapp/qtsingleapplication.h \
+@@ -167,18 +148,6 @@ SOURCES	+= main.cpp \
+ 	scandialog.cpp \
+ 	synctex_parser.c \
+ 	synctex_parser_utils.c \
+-	hunspell/affentry.cxx \
+-	hunspell/affixmgr.cxx \
+-	hunspell/csutil.cxx \
+-	hunspell/dictmgr.cxx \
+-	hunspell/hashmgr.cxx \
+-	hunspell/hunspell.cxx \
+-	hunspell/phonet.cxx \
+-	hunspell/suggestmgr.cxx \
+-	hunspell/utf_info.cxx \
+-	hunspell/filemgr.cxx \
+-	hunspell/replist.cxx \
+-	hunspell/hunzip.cxx \
+ 	singleapp/qtlocalpeer.cpp \
+ 	singleapp/qtlockedfile.cpp \
+ 	singleapp/qtsingleapplication.cpp \
+@@ -274,10 +243,11 @@ isEmpty( ICONDIR ) {
+ INCLUDEPATH  += /usr/include/poppler/qt4
+ LIBS         += -L/usr/lib -lpoppler-qt4
+ LIBS         += -L/usr/lib -lz
++LIBS         += -lhunspell
+ DEFINES += PREFIX=\\\"$${PREFIX}\\\"
+ target.path = $${PREFIX}/bin
+ 
+-#DEFINES += DEBIAN_SPELLDIR
++DEFINES += DEBIAN_SPELLDIR
+ 
+ 
+ INSTALLS = target

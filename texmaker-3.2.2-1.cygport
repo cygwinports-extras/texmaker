@@ -1,0 +1,7 @@
+inherit qt4-qmake
+
+HOMEPAGE="http://www.xm1math.net/texmaker/"
+SRC_URI="http://www.xm1math.net/texmaker/${P}.tar.bz2"
+PATCH_URI="3.2.2-system-hunspell.patch"
+
+DISTCLEANFILES="hunspell/hunspell.hxx"
