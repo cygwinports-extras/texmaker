@@ -1,4 +1,4 @@
-category: TeX
+category: Publishing
 requires: libgcc1 libhunspell1.3_0 libpoppler-qt4_3 libQtCore4 libQtGui4 libQtNetwork4 libQtWebKit4 libQtXml4 libstdc++6 texlive texlive-collection-latexrecommended texlive-collection-fontutils zlib0
 sdesc: "LaTeX GUI editor"
 ldesc: "Texmaker is a free, modern and cross-platform LaTeX editor that 
