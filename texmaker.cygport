@@ -1,5 +1,8 @@
 inherit qt4-qmake
 
+NAME="texmaker"
+VERSION=3.5.1
+RELEASE=1
 CATEGORY="Publishing"
 SUMMARY="LaTeX GUI editor"
 DESCRIPTION="Texmaker is a free, modern and cross-platform LaTeX editor that
