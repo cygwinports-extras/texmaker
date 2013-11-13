@@ -1,0 +1,22 @@
+These files are #include'd (and namespaced) in singleapp/qtlocalpeer.cpp
+
+--- origsrc/texmaker-4.0.3/texmaker.pro	2013-11-13 01:56:07.411768900 -0600
++++ src/texmaker-4.0.3/texmaker.pro	2013-11-13 02:22:42.172984000 -0600
+@@ -178,7 +178,6 @@ SOURCES	+= main.cpp \
+ 	unicodedialog.cpp \
+ 	unicodeview.cpp \
+ 	singleapp/qtlocalpeer.cpp \
+-	singleapp/qtlockedfile.cpp \
+ 	singleapp/qtsingleapplication.cpp \
+ 	singleapp/qtsinglecoreapplication.cpp \
+ 	encodingprober/CharDistribution.cpp \
+@@ -289,8 +288,7 @@ icon.path = $${ICONDIR}
+ 
+ INSTALLS = target
+ HEADERS	+= x11fontdialog.h 
+-SOURCES	+= x11fontdialog.cpp \
+-	  singleapp/qtlockedfile_unix.cpp
++SOURCES	+= x11fontdialog.cpp
+ FORMS += x11fontdialog.ui
+ 
+ utilities.files = doc/doc1.png \
